@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+/* font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+body {
+    margin: 0px;
+    font-family: "JetBrains Mono", monospace;
+    color: black;
+    background-color: #F5EEDC;
+}
+
+p {
+    font-size: medium;
+}
+
+/* // Code for Skill Container */
+
+.skillContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+}
+
+i {
+    font-size: 2.5rem;
+    margin: 0.5rem;
+}
+
+.item {
+    padding: 4px;
+    border: 2px solid black;
+    margin: 2px;
+    max-width: 20%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+.mainContainer {
+    /* display: flex; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* justify-content: center;
+     */
+    margin: 0 auto;
+    max-width: fit-content;
+
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 60vw;
+
+
+
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.navContainer>h3 {
+    margin: 0px;
+}
+
+.navContainer>ul>li {
+    display: inline;
+    margin: 0px 4px 0px 4px;
+    text-align: center;
+
+
+}
+
+.navContainer>ul>li>a {
+    text-decoration: none;
+}
+
+.hiddenMenu {
+    display: none;
+}
+
+.hiddenMenu>ul {
+    list-style-type: none;
+}
+
+.welcomeContainer>h2 {
+    margin: 0px 0px 0px 0px;
+}
+
+.mainBlock {
+    max-width: 60vw;
+}
+
+.toggleDarkMode {
+    border: none;
+    background: none;
+    margin-left: 10px;
+}
+
+/* // projectBlocks Code */
+.projectsBlock{
+    display: flex;
+    flex-direction: column;
+    max-width: 60vw;
+
+}
+.projectPost{
+    margin: 0.5rem;
+}
+
+p{
+    width: 60vw
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* All Media Queries */
+@media (768px < width < 1024px) {
+    .mainContainer {
+        .navContainer {
+            width: 90vw;
+        }
+        p{
+            width: 90vw;
+        }
+    }
+}
+
+@media (500px <=width <=768px) {
+    .mainContainer {
+        .navContainer {
+            width: 95vw;
+        }
+        p{
+            width: 95vw;
+        }
+        .mainBlock {
+            max-width: 95vw;
+        }
+    }
+}
+
+@media(width < 500px) {
+    .mainContainer {
+        margin: 0 0.5rem 0 0.5rem;
+        width: 100%;
+    }
+    .projectCardContainer{
+        width: 100vw;
+    }
+    .navContainer>ul {
+        display: none;
+    }
+    p{
+        width: 100%;
+    }
+    .showMore {
+        display: block !important;
+        margin-right: 3%;
+        background: none;
+        border: none;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    .navContainer {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+    }
+
+    .mainBlock {
+        max-width: 100%;
+    }
+}
