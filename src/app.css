@@ -12,10 +12,27 @@ body {
     background-color: #F5EEDC;
 }
 
+/* // Toggle Classes for Dark Mode  */
+.bodyToggle{
+    background-color: #3c096c;
+    color: #f1faee;
+    margin: 0px;
+    font-family: "JetBrains Mono", monospace;
+}
+.aToggle{
+    color:#f72585;
+}
+
+/* Make medium font */
 p {
     font-size: medium;
 }
-
+a{
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
 /* // Code for Skill Container */
 
 .skillContainer {
@@ -129,11 +146,23 @@ p{
     width: 60vw
 }
 
+/* // Code for JSON container */
 
+#jsonHeading{
+    text-decoration: underline;
+}
 
+pre > code{
+    font-size: 0.9rem;
+    white-space: pre-line;
+}
 
-
-
+pre{
+    white-space: pre-line;
+    padding:20px;
+    border-left: 4px solid white;
+    border-radius: 4px;
+}
 
 
 

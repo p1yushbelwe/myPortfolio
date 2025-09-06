@@ -7,16 +7,16 @@ function updateTime() {
 }
 setInterval(updateTime, 1000);
 
-function setMenu(){
-    let hiddenMenu = document.querySelector('.hiddenMenu');
+function toggleDarkMode() {
+    let getBody = document.querySelector('body');
+    let getAllLinks = document.querySelectorAll('a');
     
-    if (hiddenMenu.style.display == "block") {
-        a = "none"
-        
-    }
-    else{
-        a = "block"
-    }
-    hiddenMenu.style.display = a;
+        getBody.classList.toggle("bodyToggle"); 
+
+        for (let i = 0; i < getAllLinks.length; i++) {
+            getAllLinks[i].classList.toggle("aToggle");
+        }
     
+
+
 }
